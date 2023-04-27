@@ -1499,6 +1499,83 @@ form input[type="submit"], form button, form input[type="reset"] {
       color: #d3d3d3; }
       .news .entry-title a:hover {
         color: #f4c545; }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.testimonial-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.testimonial-carousel {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    position: relative;
+}
+
+.testimonial-item blockquote {
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+}
+
+.testimonial-item blockquote::before {
+    content: "“";
+    font-size: 3rem;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    color: #777;
+}
+
+.testimonial-item blockquote::after {
+    content: "”";
+    font-size: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    color: #777;
+}
+
+.testimonial-item blockquote footer {
+    margin-top: 1rem;
+}
+
+.testimonial-item blockquote cite {
+    font-weight: bold;
+    color: #ccc;
+}
 
 .news-list {
   list-style: none;
