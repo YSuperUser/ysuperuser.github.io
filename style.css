@@ -1502,7 +1502,8 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 .news-list {
   list-style: none;
-  margin: 0 -15px;
+  margin: 0;
+  padding: 0;
   *zoom: 1; }
   .news-list:after {
     content: " ";
@@ -1511,30 +1512,41 @@ form input[type="submit"], form button, form input[type="reset"] {
     overflow: hidden;
     height: 0; }
   .news-list li {
-    width: 25%;
-    padding: 0 15px;
-    float: left;
-    margin-bottom: 30px; }
-    @media screen and (max-width: 990px) {
-      .news-list li {
-        width: 50%; } }
-    @media screen and (max-width: 640px) {
-      .news-list li {
-        width: 100%; } }
-    .news-list li img {
-      max-width: 100%; }
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc; }
+  .news-list li:last-child {
+    margin-bottom: 0;
+    border-bottom: none; }
+  .news-list li img {
+    max-width: 120px;
+    margin-right: 15px;
+    object-fit: cover; }
+  .news-list .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%; }
   .news-list figure {
-    margin-bottom: 20px; }
+    margin-bottom: 0; }
   .news-list .entry-title {
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-size: 18px;
-    font-size: 1.2857142857em; }
+    font-weight: bold; }
   .news-list .date {
-    font-size: 12px;
-    font-size: 0.8571428571em;
+    font-size: 14px;
+    color: #777;
     display: block;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
+  .news-list .summary {
+    font-size: 16px;
+    color: #333; }
+
 
 .page {
   padding: 50px 0; }

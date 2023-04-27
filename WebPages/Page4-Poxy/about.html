@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Poxy by GetTemplates.co</title>
+    <title>Poxy</title>
     <meta name="description" content="Poxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -25,39 +25,35 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <style>
+        .floating-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        }
+        .floating-button a {
+          display: inline-block;
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 8px 16px;
+          background-color: #585858;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        .floating-button a:hover {
+          background-color: #292929;
+        }
+      </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
 	<div id="side-nav" class="sidenav">
 	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
-    <style>
-        #go-home {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            z-index: 9999;
-        }
-    
-        #go-home a {
-            color: white;
-            text-decoration: none;
-        }
-    
-        #go-home a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    
-    <div id="go-home">
-        <a href="/WebsiteTemplates.html">Go to Main Page</a>
-    </div>
+	<div class="floating-button">
+  		<a href="/WebsiteTemplates.html">Go to Main Page</a>
+	</div>
     
 	<div class="sidenav-content">
 		<p>

@@ -15,33 +15,31 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<style>
+        .floating-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        }
+        .floating-button a {
+          display: inline-block;
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 8px 16px;
+          background-color: #585858;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        .floating-button a:hover {
+          background-color: #292929;
+        }
+      </style>
 </head>
 <body>
-	<style>
-		#go-home {
-			background-color: black;
-			color: white;
-			padding: 10px;
-			text-align: center;
-			position: fixed; 
-			top: 0; 
-			left: 0; 
-			right: 0; 
-			z-index: 9999;
-		}
-	
-		#go-home a {
-			color: white;
-			text-decoration: none;
-		}
-	
-		#go-home a:hover {
-			text-decoration: underline;
-		}
-	</style>
-
-	<div id="go-home">
-		<a href="/WebsiteTemplates.html">Go to Main Page</a>
+	<div class="floating-button">
+  		<a href="/WebsiteTemplates.html">Go to Main Page</a>
 	</div>
 
 	<div id="wrapper">
@@ -74,7 +72,7 @@
 					<li style="background: url(images/slide-01.jpg) no-repeat 50% 50%;">
 						<div class="slide-holder">
 							<div class="slide-info">
-								<h1>collection for real gentlemen</h1>
+								<h1>Where Elegance Unfolds Online</h1>
 								<p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 								<a class="btn white big" href="#">See the collection</a>
 							</div>
@@ -83,7 +81,7 @@
 					<li style="background: url(images/slide-02.jpg) no-repeat 50% 50%;">
 						<div class="slide-holder">
 							<div class="slide-info">
-								<h1>collection for real gentlemen</h1>
+								<h1>Where Elegance Unfolds Online</h1>
 								<p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 								<a class="btn white big" href="#">See the collection</a>
 							</div>
@@ -92,7 +90,7 @@
 					<li style="background: url(images/slide-03.jpg) no-repeat 50% 50%;">
 						<div class="slide-holder">
 							<div class="slide-info">
-								<h1>collection for real gentlemen</h1>
+								<h1>Where Elegance Unfolds Online</h1>
 								<p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 								<a class="btn white big" href="#">See the collection</a>
 							</div>
@@ -101,7 +99,7 @@
 					<li style="background: url(images/slide-04.jpg) no-repeat 50% 50%;">
 						<div class="slide-holder">
 							<div class="slide-info">
-								<h1>collection for real gentlemen</h1>
+								<h1>Where Elegance Unfolds Online</h1>
 								<p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
 								<a class="btn white big" href="#">See the collection</a>
 							</div>
@@ -150,18 +148,6 @@
 							</div>
 						</a>
 					</div>
-				</div>
-				<div class="block-advice">
-					<div class="advice-holder">
-						<h2>Newsletter</h2>
-						<p>Join to receive promotions and other good news.</p>
-					</div>
-					<form action="#" class="form-newsletter">
-						<fieldset>
-							<input type="text" placeholder="Your email..." />
-							<input class="btn black normal" type="submit" value="Subscribe" />
-						</fieldset>
-					</form>
 				</div>
 			</section>
 		</div>

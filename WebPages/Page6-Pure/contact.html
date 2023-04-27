@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<!--
-	Moon by GetTemplates.co
-	URL: https://gettemplates.co
--->
 <html lang="en">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Moon - Multipurpose Bootstrap 4 Template by GetTemplates.co</title>
+    <title>Pure</title>
     <meta name="description" content="Core HTML Project">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -29,14 +25,34 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <style>
+        .floating-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        }
+        .floating-button a {
+          display: inline-block;
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 8px 16px;
+          background-color: #585858;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        .floating-button a:hover {
+          background-color: #292929;
+        }
+      </style>
 </head>
 <body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
 	<div class="boxed-page">
 		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-            <span class="lnr lnr-moon"></span>
+            <span class="lnr lnr-Pure"></span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -49,32 +65,10 @@
             </ul>
         </div>
     </div>
-    <style>
-        #go-home {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            z-index: 9999;
-        }
     
-        #go-home a {
-            color: white;
-            text-decoration: none;
-        }
-    
-        #go-home a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    
-    <div id="go-home">
-        <a href="/WebsiteTemplates.html">Go to Main Page</a>
-    </div>
+	<div class="floating-button">
+  		<a href="/WebsiteTemplates.html">Go to Main Page</a>
+	</div>
 </nav>		<div class="jumbotron d-flex align-items-center" style="background-image: url(img/hero-2.jpg)">
   <div class="container text-center">
     <h1 class="display-2 mb-4">Contact Us!</h1>
@@ -130,7 +124,7 @@
     <div class="inner container">
          <div class="row">
          	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
-         		<p class="mb-0">&copy; 2019 Moon. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>.</p>
+         		<p class="mb-0">&copy; 2019 Pure. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>.</p>
          	</div>
            
             <div class="col-md-6">
